@@ -3,10 +3,15 @@
   <h3>Quotes to guide you through life as seen on TV</h3>
   <hr>
 
-  <div *ngFor='let quote of quotes'>
-    <h4>{{quote.quota}}</h4>
-    <!-- <p>{{quote.author}}</p> -->
-    <app-details></app-details>
+  <div *ngFor='let quote of quotes;let i = index'>
+    <div class="card bg-light">
+      <div class="container">
+        <h4>{{quote.quota}}</h4>
+        <!-- <p>{{quote.author}}</p> -->
+
+        <app-details [quote]='quote' (isComplete)= 'deleteQuoteMe($event,i)'></app-details>
+      </div>
+    </div><br><br>
   </div>
 
   <div class="container-fluid">
