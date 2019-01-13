@@ -1,12 +1,12 @@
 <h1>QuoteMe</h1>
 <h3>Quotes to guide you through life as seen on TV</h3>
 <hr>
-<ul>
-  <div *ngFor='let quote of quotes'>
-    <li>{{quote.quote}}</li>
-    <p>{{quote.author}}</p>
+
+  <div *ngFor='let quote of quotes' class="well">
+    <h4>{{quote.quote}}</h4>
+    <app-details></app-details>
   </div>
-</ul>
+
 <div class="container-fluid">
   <app-quote-form></app-quote-form>
 </div>
