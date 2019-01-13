@@ -2,12 +2,12 @@
   <div class="form-group">
 
   <label for="quote"></label>
-  <input type="text" required class="form-control" id="quote" rows="4">
+  <input type="text" required class="form-control" id="quote" rows="4" [(ngModel)]="newQuoteMe.quota">
   </div>
   <div class="form-group">
 
     <label for=""></label>
-    <input type="text" required class="form-control" id="author">
+    <input type="text" required class="form-control" id="author" [(ngModel)]="newQuoteMe.author">
   </div>
   <button type="submit">Add A Quote</button>
 </form>

@@ -7,10 +7,12 @@ import{QuoteMe} from '../quote-me';
   styleUrls: ['./quote-form.component.css']
 })
 export class QuoteFormComponent implements OnInit {
-  new QuoteMe = new quote("", "");
+  newQuoteMe = new QuoteMe("", "");
+
   @Output() addQuoteMe = new EventEmitter<QuoteMe>();
+
   submitQuoteMe(){
-    this.addQuoteMe.emit(this.newQuoteMe)
+    this.addQuoteMe.emit(this.newQuoteMe);
   }
   constructor() { }
 

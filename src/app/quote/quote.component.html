@@ -1,12 +1,15 @@
-<h1>QuoteMe</h1>
-<h3>Quotes to guide you through life as seen on TV</h3>
-<hr>
+<div class="container">
+  <h1>QuoteMe</h1>
+  <h3>Quotes to guide you through life as seen on TV</h3>
+  <hr>
 
-  <div *ngFor='let quote of quotes' class="well">
-    <h4>{{quote.quote}}</h4>
-    <app-details (addQuoteMe)="addNewQuoteMe($event)"></app-details>
+  <div *ngFor='let quote of quotes'>
+    <h4>{{quote.quota}}</h4>
+    <!-- <p>{{quote.author}}</p> -->
+    <app-details></app-details>
   </div>
 
-<div class="container-fluid">
-  <app-quote-form></app-quote-form>
+  <div class="container-fluid">
+    <app-quote-form (addQuoteMe)="addNewQuoteMe($event)"></app-quote-form>
+  </div>
 </div>
