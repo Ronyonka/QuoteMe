@@ -4,7 +4,7 @@
 
   <div *ngFor='let quote of quotes' class="well">
     <h4>{{quote.quote}}</h4>
-    <app-details></app-details>
+    <app-details (addQuoteMe)="addNewQuoteMe($event)"></app-details>
   </div>
 
 <div class="container-fluid">

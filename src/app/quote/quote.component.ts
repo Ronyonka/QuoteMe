@@ -15,6 +15,10 @@ export class QuoteComponent implements OnInit {
     new QuoteMe("It's not easy being drunk all the time. If it were easy, everyone would do it.", "Tyrion Lannister"),
 
   ]
+  addNewQuoteMe(quote){
+    let quoteLength = this.quotes.length;
+    this.quotes.push(quote)
+  }
   constructor() { }
 
   ngOnInit() {
