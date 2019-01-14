@@ -2,18 +2,22 @@
   <h1>QuoteMe</h1>
   <h3>Quotes to guide you through life as seen on TV</h3>
   <hr>
-
-  <div *ngFor='let quote of quotes;let i = index'>
-    <div class="card bg-light">
-      <div class="container">
-        <h4>{{quote.quota}}</h4>
-        <app-details [quote]='quote' (isComplete)='deleteQuoteMe($event,i)'></app-details><br><br>
-        <app-vote></app-vote><br><br>
+  <div class="row">
+    <div class="col md-8">
+      <div *ngFor='let quote of quotes;let i = index'>
+        <div class="card bg-light">
+          <div class="container">
+            <h4>{{quote.quota}}</h4>
+            <app-details [quote]='quote' (isComplete)='deleteQuoteMe($event,i)'></app-details><br><br>
+            <app-vote></app-vote><br><br>
+          </div>
+        </div><br><br>
       </div>
-    </div><br><br>
-  </div>
-
-  <div class="container-fluid">
-    <app-quote-form (addQuoteMe)="addNewQuoteMe($event)"></app-quote-form>
+    </div>
+    <div class="col md-4">
+      <div class="container-fluid">
+        <app-quote-form (addQuoteMe)="addNewQuoteMe($event)"></app-quote-form>
+      </div>
+    </div>
   </div>
 </div>
