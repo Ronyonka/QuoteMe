@@ -7,7 +7,7 @@
     <div class="card bg-light">
       <div class="container">
         <h4>{{quote.quota}}</h4>
-        <app-details [quote]='quote' (isComplete)= 'deleteQuoteMe($event,i)'></app-details><br><br>
+        <app-details [quote]='quote' (isComplete)='deleteQuoteMe($event,i)'></app-details><br><br>
         <app-vote></app-vote><br><br>
       </div>
     </div><br><br>
