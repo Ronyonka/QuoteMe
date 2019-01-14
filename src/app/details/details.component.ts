@@ -9,7 +9,7 @@ import{QuoteMe} from '../quote-me';
 export class DetailsComponent implements OnInit {
   @Input() quote:QuoteMe;
   @Output() isComplete= new EventEmitter<boolean>();
-  goalDelete(complete:boolean){
+  quoteDelete(complete:boolean){
   this.isComplete.emit(complete);
 }
   constructor() { }
