@@ -6,9 +6,7 @@
   <div *ngFor='let quote of quotes;let i = index'>
     <div class="card bg-light">
       <div class="container">
-        <h4>{{quote.quota}}</h4>
-        <!-- <p>{{quote.author}}</p> -->
-
+        <h4>{{quote.quota}}</h4>        
         <app-details [quote]='quote' (isComplete)= 'deleteQuoteMe($event,i)'></app-details>
       </div>
     </div><br><br>
