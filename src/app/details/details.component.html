@@ -1,12 +1,4 @@
-<div class="row">
-  <div class="col md-4">
     <p>{{quote.author}}</p>
     <p>{{quote.name}}</p>
-  </div>
-  <div class="col md-4">
-      <button (click) = 'quoteDelete(true)' class="btn btn-outline-dark"> Delete</button>
-  </div>
-<div class="col md-4">
-    <span>{{quote.date | timeAgo}}</span>
-</div>
-</div>
+    <p>{{dateCount}}</p>
+    <button (click) = 'quoteDelete(true)' class="btn btn-outline-danger" id="delete"> <i class="fa fa-trash" aria-hidden="true"></i>Delete</button>
