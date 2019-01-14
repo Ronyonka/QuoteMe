@@ -1,4 +1,4 @@
-import { Component, OnInit, Output, EventEmitter } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import{QuoteMe} from '../quote-me';
 
 @Component({
@@ -7,7 +7,7 @@ import{QuoteMe} from '../quote-me';
   styleUrls: ['./vote.component.css']
 })
 export class VoteComponent implements OnInit {
-  @Output () isComplete = new EventEmitter<boolean>();
+
 
   upVotes=0;
   downVotes=0;
