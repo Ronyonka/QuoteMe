@@ -1,7 +1,11 @@
+@import "~bootstrap/dist/css/bootstrap.css";
+
 body {
-  font-family: 'Gloria Hallelujah', cursive;
+  font-family: 'K2D', sans-serif;
 }
 h1{
   text-align: center;
 }
-@import "~bootstrap/dist/css/bootstrap.css"
+h3{
+  text-align: center;
+}
