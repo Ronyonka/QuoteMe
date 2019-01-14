@@ -1,12 +1,12 @@
 <form (ngSubmit)='submitQuoteMe()' #quoteform='ngForm'>
   <div class="form-group">
 
-  <label for="quote"></label>
+  <label for="quote">Quote</label>
   <textarea type="text" required placeholder="Enter Quote Here" class="form-control" id="quote" rows="4" [(ngModel)]="newQuoteMe.quota"  name="quota" #quota="ngModel"></textarea>
   </div>
   <div class="form-group">
 
-    <label for=""></label>
+    <label for="text">Author</label>
     <input type="text" required placeholder="Author of The Quote" class="form-control" id="author" [(ngModel)]="newQuoteMe.author"  name="author" #author="ngModel">
   </div>
   <button type="submit" class="btn btn-outline-secondary">Add A Quote</button>

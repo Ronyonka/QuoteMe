@@ -10,13 +10,15 @@
             <h4>{{quote.quota}}</h4>
             <div class="row">
               <div class="col md-8">
-                  <app-details [quote]='quote' (isComplete)='deleteQuoteMe($event,i)'></app-details>
+                <app-details [quote]='quote' (isComplete)='deleteQuoteMe($event,i)'></app-details>
               </div>
-            <div class="col md-4">
-                <app-vote></app-vote>
-            </div>
-            </div>
+              <div class="row">
+                <div class="col md-4">
+                  <app-vote></app-vote>
+                </div>
+              </div>
 
+            </div>
           </div>
         </div><br><br>
       </div>
